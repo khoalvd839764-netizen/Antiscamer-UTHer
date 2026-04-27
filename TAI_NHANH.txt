@@ -1,0 +1,64 @@
+╔════════════════════════════════════════════════════════════╗
+║          📥 TẢI SOURCE CODE ANTI SCAMER VỀ MÁY             ║
+╚════════════════════════════════════════════════════════════╝
+
+🎯 CÁCH NHANH NHẤT - 3 BƯỚC:
+
+1️⃣  Trong Figma Make, tìm nút "Export" hoặc "Download"
+    → Click → Chọn "Download source code"
+    → File ZIP sẽ tải về máy
+
+2️⃣  Giải nén file ZIP
+    → Windows: Click phải → Extract All
+    → Mac: Double-click file ZIP
+    → Linux: unzip file-name.zip
+
+3️⃣  Mở trong VS Code và chạy:
+    cd anti-scamer
+    pnpm install
+    pnpm dev
+    → Mở: http://localhost:5173
+
+════════════════════════════════════════════════════════════
+
+📚 XEM HƯỚNG DẪN CHI TIẾT:
+   → CACH_TAI_SOURCODE.md
+   → HUONG_DAN_TAI_VE_CHI_TIET.md
+   → HUONG_DAN_CHAY_VSCODE.md
+
+════════════════════════════════════════════════════════════
+
+🆘 NẾU KHÔNG CÓ NÚT EXPORT:
+
+Phương án A: Copy thủ công
+   → Xem file: HUONG_DAN_TAI_VE_CHI_TIET.md
+   → Section "PHƯƠNG ÁN 2"
+
+Phương án B: Dùng Git
+   git init
+   git add .
+   git commit -m "Initial commit"
+   → Push lên GitHub → Clone về
+
+Phương án C: Share qua Drive
+   → Upload folder lên Google Drive
+   → Chia sẻ link → Tải về
+
+════════════════════════════════════════════════════════════
+
+✅ SAU KHI TẢI VỀ:
+   □ Có file package.json
+   □ Có file index.html
+   □ Có folder src/
+   □ Chạy được: pnpm install
+   □ Chạy được: pnpm dev
+   □ Mở được: http://localhost:5173
+
+════════════════════════════════════════════════════════════
+
+📦 THÔNG TIN:
+   • Tổng số file: 76 files
+   • Kích thước: ~2.3 MB (không bao gồm node_modules)
+   • Sau khi cài: ~500 MB (bao gồm dependencies)
+
+🚀 Chúc bạn thành công!
