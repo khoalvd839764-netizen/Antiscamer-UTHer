@@ -62,7 +62,7 @@ export function Root() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center md:p-4 relative overflow-hidden">
+    <div className="fixed inset-0 md:relative md:inset-auto md:min-h-screen bg-black md:bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center md:p-4 overflow-hidden">
       {/* Desktop Background Effects (Hidden on Mobile) */}
       <div className="hidden md:block absolute inset-0">
         <div className="absolute top-20 left-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-float"></div>
@@ -70,7 +70,7 @@ export function Root() {
       </div>
 
       {/* Device Frame (Full screen on mobile, iPhone 14 Pro Max frame on desktop) */}
-      <div className="relative w-full h-screen md:w-[430px] md:h-[932px] bg-black md:rounded-[60px] md:shadow-2xl overflow-hidden md:border-[14px] md:border-gray-800 safe-area">
+      <div className="relative w-full h-[100dvh] md:h-[932px] md:w-[430px] bg-black md:rounded-[60px] md:shadow-2xl overflow-hidden md:border-[14px] md:border-gray-800 safe-area">
         {/* Dynamic Island (Hidden on Mobile) */}
         <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[126px] h-[37px] bg-black rounded-b-[20px] z-50" />
 
@@ -220,7 +220,7 @@ export function Root() {
             )}
 
             {/* Main Content Area */}
-            <div className="flex-1 overflow-y-auto overflow-x-hidden">
+            <div className="flex-1 overflow-y-auto overflow-x-hidden px-4 md:px-0">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={location.pathname}
@@ -228,7 +228,7 @@ export function Root() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -25 }}
                   transition={{ duration: 0.25, ease: "easeInOut" }}
-                  className="h-full"
+                  className="h-full min-h-[820px] md:min-h-0 pb-10 md:pb-0"
                 >
                   <Outlet />
                 </motion.div>
